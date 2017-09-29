@@ -1,0 +1,329 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+* Base structure
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #00bee9;
+}
+
+a:focus, a:hover {
+  color: #e61638;
+}
+
+.logo {
+  font-family: 'Oranienbaum', serif;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.logo .name {
+  display: none;
+}
+
+.logo .year {
+  color: #e61638;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    font-size: 46px;
+  }
+}
+
+.tagline {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+  .tagline {
+    clear: both;
+    float: left;
+    padding: 0 15px;
+  }
+}
+
+nav {
+  color: white;
+  font-size: 14px;
+}
+
+nav ul {
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav .nav > li > a:focus, nav .nav > li > a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+nav.navbar {
+  border: none;
+  padding: 42px 0 0;
+}
+
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 15px 15px 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding: 0 15px;
+  }
+}
+
+.hero {
+  background: url(/images/black.png), #000 url(/images/hero.jpg) center 0 no-repeat;
+  color: #fff;
+  margin: 10px 0;
+  min-height: 758px;
+  position: relative;
+}
+
+.hero h1 {
+  margin-top: 250px;
+}
+
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+.hero h2 {
+  margin-top: 250px;
+}
+
+.hero h2 span {
+  color: #00a6d5;
+  font-size: .85em;
+}
+
+.about {
+  padding: 0 0 54px;
+}
+
+.instagram-img {
+  margin: 16px 0;
+}
+
+.projects .row {
+  margin: 0 0 16px;
+}
+
+.download a {
+  margin: 0 0 0 4px;
+}
+
+@media (max-width: 767px) {
+  .container > .navbar-collapse {
+    position: relative;
+    top: 50px;
+  }
+  .logo {
+    font-size: 42px;
+  }
+}
+
+.social {
+  bottom: 25px;
+  position: absolute;
+}
+
+.social .list-inline {
+  margin-left: -17px;
+}
+
+.social li {
+  font-size: 25px;
+}
+
+.social li:nth-of-type(even) a:hover {
+  color: #00bee9;
+}
+
+.social a {
+  color: #fff;
+  padding: 12px;
+}
+
+.social a:hover {
+  color: #e31c3d;
+}
+
+@media (max-width: 767px) {
+  .social a {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .social {
+    bottom: 5px;
+  }
+}
+
+main {
+  padding: 40px 0;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+
+main p.date {
+  font-size: 14px;
+  margin: 0;
+}
+
+main p.title {
+  font-weight: 800;
+  margin: 0;
+}
+
+main p.location {
+  font-style: italic;
+}
+
+main p.description {
+  font-size: 14px;
+}
+
+.photos {
+  background: #00a5d4;
+  color: #fff;
+}
+
+footer {
+  background: #9a1919;
+  color: #fff;
+  font-size: 14px;
+  height: 210px;
+  line-height: 1.2;
+  padding: 50px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 3px solid #e31c3d;
+  border-radius: 10px;
+  color: #e31c3d;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 17px 58px;
+}
+
+.btn-outline:hover {
+  background: #e31c3d;
+  color: #fff;
+}
+
+.btn-projects {
+  color: #00bee9;
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.btn-projects.focus, .btn-projects:focus, .btn-projects:hover {
+  color: #e31c3d;
+}
+
+.btn-projects:before {
+  content: '\2013';
+  left: 24px;
+  position: absolute;
+}
+
+.btn-projects.collapsed:before {
+  content: '+';
+}
+
+.bg-outline {
+  border: 1px solid #fff;
+  display: inline-block;
+  margin: 0 0 35px;
+  padding: 15px;
+}
+
+@media print {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8%;
+    float: left;
+  }
+  .col-sm-2 {
+    width: 17%;
+    float: left;
+  }
+  .col-sm-3 {
+    width: 25%;
+    float: left;
+  }
+  .col-sm-4 {
+    width: 33%;
+    float: left;
+  }
+  .col-sm-5 {
+    width: 42%;
+    float: left;
+  }
+  .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-sm-7 {
+    width: 58%;
+    float: left;
+  }
+  .col-sm-8 {
+    width: 67%;
+    float: left;
+  }
+  .col-sm-9 {
+    width: 75%;
+    float: left;
+  }
+  .col-sm-10 {
+    width: 83%;
+    float: left;
+  }
+  .col-sm-11 {
+    width: 92%;
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

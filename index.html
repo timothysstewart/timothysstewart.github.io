@@ -193,7 +193,15 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
   <script src="./scripts/main.js"></script>
+  <script async="" src="//www.googletagmanager.com/gtag/js?id=UA-107313652-1"></script>
   <script>
+    // Global Site Tag (gtag.js) - Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107313652-1');
+    
+    // Instafeed
     var userFeed = new Instafeed({
     	get: 'user',
     	userId: '247950452',
